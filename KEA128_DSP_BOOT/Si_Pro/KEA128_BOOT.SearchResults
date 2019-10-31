@@ -1,0 +1,11 @@
+---- Iap.IAP_ResendTime Matches (10 in 2 files) ----
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):			Iap.IAP_ResendTime = 0;
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):				if(Iap.IAP_ResendTime >= 800)
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):					Iap.IAP_ResendTime = 0;
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):					Iap.IAP_ResendTime = 0;
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):				if(Iap.IAP_ResendTime >= T400MS_8)
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):					Iap.IAP_ResendTime = 0;
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):			if(Iap.IAP_ResendTime >= T40MS_8)
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):			if(Iap.IAP_ResendTime >= T1S_8)
+App_updata.c (e:\project\py1903\kea128_dsp_boot\source\app):				Iap.IAP_ResendTime = 0;
+Task.c (e:\project\py1903\kea128_dsp_boot\source\app):	Iap.IAP_ResendTime++;

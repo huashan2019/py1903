@@ -1,0 +1,88 @@
+///=========================
+#ifndef __APP_AUTOTEST_H
+#define __APP_AUTOTEST_H
+
+#define Uart_AUTOTEST            SCH_Uart1
+
+typedef enum
+{
+	M2T_SRC_TEST_CMD,
+	M2T_EQ_TEST_CMD,
+	M2T_RAD_TEST_CMD,
+	M2T_MEDIA_TEST_CMD,
+	M2T_BLU_TOOTH_CMD,
+	M2T_NAV_TEST_CMD,
+	M2T_OTHER_CMD,
+	M2T_VER_CMD,
+	M2T_COMPANY_CMD=0xFF,
+}M2T_GROUP_ID;
+
+typedef enum
+{
+	T_WORK_ON=0x01,
+	T_WORK_OFF,
+	T_WORK_QU,
+	T_WORK_ACC_OFF,
+	T_WORK_DEFAULT,
+	T_WORK_RESET,
+	T_WORK_PWR_ON
+}M2T_WORK_ID;
+
+typedef enum
+{
+	T_SRC_RAD=0x01,
+	T_SRC_3G,
+	T_SRC_AUX,
+	T_SRC_BOOK,
+	T_SRC_USB,
+	T_SRC_BLU_TOOTH,
+	T_SRC_TV,
+	T_SRC_TPMS,
+	T_SRC_CAR_RECORD,
+	T_SRC_SD,
+	T_SRC_CONNECT_TEL,
+	T_SRC_NONE,
+	T_SRC_NONE1,
+}M2T_SRC_SUBID;
+
+typedef enum
+{
+	T_EQ_VOL_SET=0x00,
+	T_EQ_VOL_QU,	
+	T_EQ_BAS_SET,
+	T_EQ_BAS_QU,
+	T_EQ_MID_SET,
+	T_EQ_MID_QU,
+	T_EQ_TRE_SET,
+	T_EQ_TRE_QU,
+	T_EQ_LOUD_SET,
+	T_EQ_MUTE_SET,
+	T_EQ_SBWOOF_SET,
+	T_EQ_FBL_SET,
+	T_EQ_FBL_QU,
+	T_EQ_RESET,
+	T_EQ_SET_SUBWOOF_FILT,
+	T_EQ_SUB_GAIN,
+	T_EQ_INFO_QU,
+	T_EQ_SET
+}M2T_EQ_SUBID;
+
+typedef enum
+{
+	T_RAD_BAND_SET=0x00,
+	T_RAD_FRE_SET,
+	T_RAD_FRE_QU,
+	T_RAD_SEEK_SET,
+	T_RAD_LOC_SET,
+	T_RAD_FRE_MIN_MAX_QU,
+	T_RAD_ST_QU
+}M2T_RAD_SUBID;
+
+
+extern SCH_U8 AUTO_TEST_DataRx[40];
+extern SCH_U8 AUTO_TEST_DataTx[40];
+
+
+extern void AutotestDataRxPro(void);
+extern void TASK_Auto_Pro(void);
+#endif
