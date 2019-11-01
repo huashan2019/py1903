@@ -229,7 +229,7 @@ void BtDataAnalyse(void)
 					if(!Get_DSP_OFF_Flag)
 					{
 						sch_memcpy(Mix_Mixer_data,&pData[2],5);
-						//Dsp_Mix_Mixer(pData[0],&pData[2]);
+						Dsp_Mix_Mixer(pData[0],&pData[2]);
 					}
 					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
 					break;
@@ -247,6 +247,16 @@ void BtDataAnalyse(void)
 				case 0x82:///«Î«ÛªÏ“Ù◊¥Ã¨
 					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x02));
 					break;
+
+				case 0x92:///«Î«ÛªÏ“Ù◊¥Ã¨1
+					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x12));
+					break;
+					
+				case 0x93:///«Î«ÛªÏ“Ù◊¥Ã¨2
+					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x13));
+					break;
+
+					
 				case 0x03:///Filters
 					if(!Get_DSP_OFF_Flag)
 					{
