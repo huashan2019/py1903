@@ -1,10 +1,10 @@
----- Start_Detect Matches (10 in 4 files) ----
-App_start.c (e:\project\py1903\kea128_dsp_app\source\app):void Start_Detect(void)
-App_start.h (e:\project\py1903\kea128_dsp_app\source\app):extern void Start_Detect(void);
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Start_Detect
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR>[Called By]<UL><LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Start_Detect
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Start_Detect
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<P><STRONG><a name="[155]"></a>Start_Detect</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, app_start.o(i.Start_Detect))
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Start_Detect &rArr; PostMessage &rArr; Queue_In &rArr; sch_memcpy
-KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Start_Detect
-Task.c (e:\project\py1903\kea128_dsp_app\source\app):	Start_Detect();
+---- Dsp_Info_Det Matches (10 in 4 files) ----
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	Dsp_Info_Det();
+App_dsp_readback.c (e:\project\py1903\kea128_dsp_app\source\app):void Dsp_Info_Det(void)
+App_dsp_readback.h (e:\project\py1903\kea128_dsp_app\source\app):extern void Dsp_Info_Det(void);
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Det
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<P><STRONG><a name="[ea]"></a>Dsp_Info_Det</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, app_dsp_readback.o(i.Dsp_Info_Det))
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = Dsp_Info_Det &rArr; Dsp_Info_Data &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Det
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Det
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Det

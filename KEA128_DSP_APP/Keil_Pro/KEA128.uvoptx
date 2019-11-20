@@ -118,7 +118,6 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>8?</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -138,7 +137,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>JL2CM3</Key>
-          <Name>-U59408297 -O78 -S4 -ZTIFSpeedSel2000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BC11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8001 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD1FFFF000 -FC800 -FN1 -FF0MKE04Zxxx_P128KB.FLM -FS04000 -FL01C000 -FP0($$Device:SKEAZ128xxx4$Flash\MKE04Zxxx_P128KB.FLM)</Name>
+          <Name>-U59408297 -O78 -S5 -ZTIFSpeedSel1000 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -RST0 -N00("ARM CoreSight SW-DP") -D00(0BC11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8001 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TFE0 -FO15 -FD1FFFF000 -FC800 -FN1 -FF0MKE04Zxxx_P128KB.FLM -FS04000 -FL01C000 -FP0($$Device:SKEAZ128xxx4$Flash\MKE04Zxxx_P128KB.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -152,16 +151,16 @@
           <Type>0</Type>
           <LineNumber>312</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>25140</Address>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
+          <BreakIfRCount>0</BreakIfRCount>
           <Filename>..\Source\App\app_bt.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\KEA128\../Source/App/app_bt.c\312</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -370,7 +369,7 @@
       <DebugFlag>
         <trace>0</trace>
         <periodic>1</periodic>
-        <aLwin>1</aLwin>
+        <aLwin>0</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>

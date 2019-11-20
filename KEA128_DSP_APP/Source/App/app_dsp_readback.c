@@ -62,6 +62,7 @@ void Dsp_Info_Data(SCH_U8 Channel,SCH_U8 *Cnt)
 				Dsp_Audio_Flag[Channel-1] = 1;
 				Dsp_Mute_A(Channel,DSP_MUTE,1);
 				///TurnOff_REM_EN;
+				AudioMute(HARDON);
 			}
 		}
 		if(Dsp_Audio_Flag[Channel-1] == 1)
@@ -91,6 +92,8 @@ void Dsp_Info_Data(SCH_U8 Channel,SCH_U8 *Cnt)
 			if(App_Dsp.Dsp_Data.Mute[Channel] == DSP_UNMUTE)
 			{
 				Dsp_Mute_A(Channel,DSP_UNMUTE,1);
+				
+				AudioMute(HARDOFF);
 			}
 		}
 	}

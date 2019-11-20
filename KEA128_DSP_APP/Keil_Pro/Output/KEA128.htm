@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Output\KEA128.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Output\KEA128.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Oct 24 16:42:06 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Wed Nov 20 14:50:42 2019
 <BR><P>
 <H3>Maximum Stack Usage =        632 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -795,11 +795,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MUTE_Ctl
 </UL>
 <BR>[Called By]<UL><LI><a href="#[172]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TASK_Power_Pro
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DSP_Test_Detect
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Updata
 <LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemPowerUp
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PowerOffSystemModule
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PowerMessage
 <LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnterPowerOff
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Info_Data
 </UL>
 
 <P><STRONG><a name="[80]"></a>Audio_Init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, app_start.o(i.Audio_Init))
@@ -930,7 +932,7 @@ Global Symbols
 <LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysLowPowerExit
 </UL>
 
-<P><STRONG><a name="[88]"></a>BtDataAnalyse</STRONG> (Thumb, 2886 bytes, Stack size 32 bytes, app_bt.o(i.BtDataAnalyse))
+<P><STRONG><a name="[88]"></a>BtDataAnalyse</STRONG> (Thumb, 2944 bytes, Stack size 32 bytes, app_bt.o(i.BtDataAnalyse))
 <BR><BR>[Stack]<UL><LI>Max Depth = 608<LI>Call Chain = BtDataAnalyse &rArr; Dsp_Unite &rArr; Dsp_GEN_Filter &rArr; Filter_Higher_Order_Butterworth &rArr; sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartTxData
@@ -1034,10 +1036,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOInit
 </UL>
 
-<P><STRONG><a name="[c1]"></a>DSP_Test_Detect</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, mw_gpio.o(i.DSP_Test_Detect))
+<P><STRONG><a name="[c1]"></a>DSP_Test_Detect</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, mw_gpio.o(i.DSP_Test_Detect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 584<LI>Call Chain = DSP_Test_Detect &rArr; Dsp_OFF &rArr; Dsp_Updata &rArr; Dsp_GEN_Filter &rArr; Filter_Higher_Order_Butterworth &rArr; sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_ON
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_ON
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_OFF
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputPin
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage
@@ -1234,10 +1237,11 @@ Global Symbols
 <LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BtDataAnalyse
 </UL>
 
-<P><STRONG><a name="[e4]"></a>Dsp_Info_Data</STRONG> (Thumb, 402 bytes, Stack size 40 bytes, app_dsp_readback.o(i.Dsp_Info_Data))
+<P><STRONG><a name="[e4]"></a>Dsp_Info_Data</STRONG> (Thumb, 414 bytes, Stack size 40 bytes, app_dsp_readback.o(i.Dsp_Info_Data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = Dsp_Info_Data &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinSet
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AudioMute
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Dsp_Mute_A
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SIGMA_READ
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
@@ -2551,7 +2555,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysSpiInit
 </UL>
 
-<P><STRONG><a name="[155]"></a>Start_Detect</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, app_start.o(i.Start_Detect))
+<P><STRONG><a name="[155]"></a>Start_Detect</STRONG> (Thumb, 196 bytes, Stack size 8 bytes, app_start.o(i.Start_Detect))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Start_Detect &rArr; PostMessage &rArr; Queue_In &rArr; sch_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PostMessage

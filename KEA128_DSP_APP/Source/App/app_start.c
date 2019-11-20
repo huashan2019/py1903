@@ -101,7 +101,7 @@ void Start_Detect(void)
 #if AUDIO_START == ENABLE
 	AUDIO_Detect();
 #endif
-	if(Get_START_Flag==ON)
+	if(Get_START_Flag==ON && !Get_VolErr_Flag)
 	{
 		if((Get_ACC_Has==ON &&Get_ACC_Flag==OFF)
 		 ||(Get_ACC_Has==OFF&&Get_AUDIO_Flag==OFF))
@@ -110,7 +110,7 @@ void Start_Detect(void)
 			PostMessage(POWER_MODULE,EVT_POWER_OFF,POWEROFF_FROM_START);
 		}
 	}
-	if(Get_START_Flag==OFF)
+	if(Get_START_Flag==OFF && !Get_VolErr_Flag)
 	{
 		if((Get_ACC_Has==ON &&Get_ACC_Flag==ON)
 		 ||(Get_ACC_Has==OFF&&Get_AUDIO_Flag==ON))
