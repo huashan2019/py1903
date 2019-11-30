@@ -50,7 +50,6 @@ void DSP_Test_Detect(void)
 				DSP_OFF_FLAG = 1;
 				pData = 1;/*turn off*/
 				Dsp_OFF();
-				AudioMute(HARDON);
 			}
 			else
 			{
@@ -58,8 +57,6 @@ void DSP_Test_Detect(void)
 				DSP_OFF_FLAG = 0;
 				pData = 2;/*turn on*/
 				Dsp_ON();
-				
-				AudioMute(HARDOFF);
 			}
 			PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData,0x0E));
 			PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///Ë¢ÐÂ
