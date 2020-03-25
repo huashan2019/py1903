@@ -198,8 +198,11 @@ void Dsp_StoreLoadPro(void)
 				App_Dsp.DspNum = App_Dsp.DspUpdataNum;
 				Flash_Set_DspNum();
 				CheckVol();
-				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
-				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///Ë¢ÐÂ
+				if(BtSPPCONFlag || BtGATTCONFlag)
+				{
+					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///Ë¢ÐÂ
+				}
 			}
 			break;
 		case Flash_TO_File:///3--FLASH´æ´¢³ÉFILE

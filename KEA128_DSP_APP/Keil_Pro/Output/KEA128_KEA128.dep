@@ -1,5 +1,5 @@
 Dependencies for Project 'KEA128', Target 'KEA128': (DO NOT MODIFY !)
-F (..\Source\App\main.c)(0x5D833A36)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\Source\App\main.c)(0x5E788778)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (..\Source\App\include.h)(0x5CB590B4)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)
@@ -30,7 +30,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -104,7 +104,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -178,7 +178,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -252,7 +252,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -326,7 +326,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -400,7 +400,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -474,7 +474,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -548,7 +548,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -622,7 +622,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -696,7 +696,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -770,7 +770,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -844,7 +844,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -918,7 +918,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -992,7 +992,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1066,7 +1066,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1140,7 +1140,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1183,7 +1183,7 @@ I (..\Source\App\dsp_defines.h)(0x5C70FB09)
 I (..\Source\App\dsp_IC_1_PARAM.h)(0x5C91DE43)
 I (..\Source\App\dsp_IC_1_REG.h)(0x5C70FB09)
 I (..\Source\App\app_eprom.h)(0x5CB54730)
-F (..\Source\App\app_bt.c)(0x5DBA8EE7)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_bt.o --omf_browse .\output\app_bt.crf --depend .\output\app_bt.d)
+F (..\Source\App\app_bt.c)(0x5E7971D4)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_bt.o --omf_browse .\output\app_bt.crf --depend .\output\app_bt.d)
 I (..\Source\App\include.h)(0x5CB590B4)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)
@@ -1214,7 +1214,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1257,7 +1257,7 @@ I (..\Source\App\dsp_defines.h)(0x5C70FB09)
 I (..\Source\App\dsp_IC_1_PARAM.h)(0x5C91DE43)
 I (..\Source\App\dsp_IC_1_REG.h)(0x5C70FB09)
 I (..\Source\App\app_eprom.h)(0x5CB54730)
-F (..\Source\App\app_dsp_adau1452.c)(0x5DD4E147)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_dsp_adau1452.o --omf_browse .\output\app_dsp_adau1452.crf --depend .\output\app_dsp_adau1452.d)
+F (..\Source\App\app_dsp_adau1452.c)(0x5E7AD7D8)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_dsp_adau1452.o --omf_browse .\output\app_dsp_adau1452.crf --depend .\output\app_dsp_adau1452.d)
 I (..\Source\App\include.h)(0x5CB590B4)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)
@@ -1288,7 +1288,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1363,7 +1363,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1437,7 +1437,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1511,7 +1511,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1585,7 +1585,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1659,7 +1659,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1733,7 +1733,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1776,7 +1776,7 @@ I (..\Source\App\dsp_defines.h)(0x5C70FB09)
 I (..\Source\App\dsp_IC_1_PARAM.h)(0x5C91DE43)
 I (..\Source\App\dsp_IC_1_REG.h)(0x5C70FB09)
 I (..\Source\App\app_eprom.h)(0x5CB54730)
-F (..\Source\App\app_at.c)(0x5DE1C69D)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_at.o --omf_browse .\output\app_at.crf --depend .\output\app_at.d)
+F (..\Source\App\app_at.c)(0x5E7ACD59)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_at.o --omf_browse .\output\app_at.crf --depend .\output\app_at.d)
 I (..\Source\App\include.h)(0x5CB590B4)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)
@@ -1807,7 +1807,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1881,7 +1881,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -1955,7 +1955,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2029,7 +2029,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2072,7 +2072,7 @@ I (..\Source\App\dsp_defines.h)(0x5C70FB09)
 I (..\Source\App\dsp_IC_1_PARAM.h)(0x5C91DE43)
 I (..\Source\App\dsp_IC_1_REG.h)(0x5C70FB09)
 I (..\Source\App\app_eprom.h)(0x5CB54730)
-F (..\Source\App\app_dspdata_access.c)(0x5CB5874A)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_dspdata_access.o --omf_browse .\output\app_dspdata_access.crf --depend .\output\app_dspdata_access.d)
+F (..\Source\App\app_dspdata_access.c)(0x5E7AD51C)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\app_dspdata_access.o --omf_browse .\output\app_dspdata_access.crf --depend .\output\app_dspdata_access.d)
 I (..\Source\App\include.h)(0x5CB590B4)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)
@@ -2103,7 +2103,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2177,7 +2177,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2251,7 +2251,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2325,7 +2325,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2399,7 +2399,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2473,7 +2473,7 @@ I (..\Source\drivers\nvm\flash.h)(0x5CF713B7)
 I (..\Source\drivers\ics\ics.h)(0x5CF713B7)
 I (..\Source\drivers\PMC\pmc.h)(0x5CF713B7)
 I (..\Source\cpu\sysinit.h)(0x5CF713B7)
-I (..\Source\App\config.h)(0x5DE1C6DB)
+I (..\Source\App\config.h)(0x5E7B0495)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\App\mw_uart.h)(0x5C70FB09)
 I (..\Source\Sch\sch_queue.h)(0x5CF713B7)
@@ -2819,7 +2819,7 @@ I (..\Source\Sch\sch_common.h)(0x5CF713B7)
 I (..\Source\Sch\sch_message.h)(0x5CF713B7)
 I (..\Source\Sch\sch_printf.h)(0x5CF713B7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F606B8)
-F (..\Source\Sch\sch_message.c)(0x5CF713B7)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\sch_message.o --omf_browse .\output\sch_message.crf --depend .\output\sch_message.d)
+F (..\Source\Sch\sch_message.c)(0x5E7AD5F8)(-c --cpu Cortex-M0+ -g -O0 --apcs=interwork --split_sections -I ..\Source\common -I ..\Source\platforms -I ..\Source\cpu -I ..\Source\Sch -I ..\Source\drivers\wdog -I ..\Source\drivers\sim -I ..\Source\drivers\rtc -I ..\Source\drivers\pit -I ..\Source\drivers\uart -I ..\Source\drivers\can -I ..\Source\drivers\adc -I ..\Source\cpu\headers -I ..\Source\drivers\gpio -I ..\Source\drivers\ftm -I ..\Source\drivers\nvm -I ..\Source\drivers\ics -I ..\Source\drivers\sim -I ..\Source\App -I ..\Source\drivers\PMC -I ..\Source\drivers\spi -I ..\Source\drivers\kbi-I.\RTE\_KEA128-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\Kinetis_KEAxx_DFP\1.3.0\Device\Include-D__UVISION_VERSION="523" -D_RTE_ -DSKEAZ128xxx4 -DTRK_KEA128 -DCPU_KEA128 -DKEIL-o .\output\sch_message.o --omf_browse .\output\sch_message.crf --depend .\output\sch_message.d)
 I (..\Source\Sch\sch_config.h)(0x5D917703)
 I (..\Source\common\common.h)(0x5CF713B7)
 I (..\Source\cpu\arm_cm0.h)(0x5CF713B7)

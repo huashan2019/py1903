@@ -1,6 +1,79 @@
----- BT_LBDADDR_GET Matches (3 in 2 files) ----
-App_at.h (e:\project\py1903\kea128_dsp_app\source\app):#define BT_LBDADDR_GET      "AT+B GLBD\r"
-App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							UartTxData(SCH_Uart_BT,BT_LBDADDR_GET,sizeof(BT_LBDADDR_GET));
----- BT_LBDADDR_GET Search Errors Encountered (1) ----
+---- M2B_DSP_DATA Matches (75 in 9 files) ----
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,BtRx_SubID));							
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,BtRx_SubID));							
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,BtRx_SubID));							
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,0x01);
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD((pData[1]-1)*HPLP_FILTER_CNT,0x03));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD((pData[1]-1)*HPLP_FILTER_CNT+1,0x03));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x02));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x12));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x13));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x03));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x04));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						//PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x14));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						//PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x15));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x05));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x06));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x07));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x08));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x09));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):								PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):								PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x03,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(DSP_CHANNEL_ALL_NONE,0x06));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x0D));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],0x0E));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):		case M2B_DSP_DATA:///
+App_bt.h (e:\project\py1903\kea128_dsp_app\source\app):#define M2B_DSP_DATA     0x0A
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFF,0x00));///ERROR
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFF,0x00));///ERROR
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dspdata_access.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):	PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,0x00));	
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):				PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):				///PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
+App_dsp_adau1452.c (e:\project\py1903\kea128_dsp_app\source\app):					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Left,0x04)))
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Left,0x14)))
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Left,0x15)))
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Right,0x04)))
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Right,0x14)))
+App_dsp_eq.c (e:\project\py1903\kea128_dsp_app\source\app):			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Right,0x15)))
+App_dsp_single_mute.c (e:\project\py1903\kea128_dsp_app\source\app):			PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0D));
+Mw_gpio.c (e:\project\py1903\kea128_dsp_app\source\app):			PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData,0x0E));
+Mw_gpio.c (e:\project\py1903\kea128_dsp_app\source\app):			PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///刷新
+Task.c (e:\project\py1903\kea128_dsp_app\source\app):	//PostMessage(BT_MODULE,M2B_DSP_DATA,0x01);
+---- M2B_DSP_DATA Search Errors Encountered (1) ----
 The following 1 files could not be processed:
 E:\project\py1903\KEA128_DSP_APP\Keil_Pro\JLinkLog.txt : File could not be opened.

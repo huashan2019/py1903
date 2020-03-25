@@ -19,7 +19,7 @@
 #define AUDIO_START         ENABLE
 
 ///°æ±¾ºÅ
-#define MCU_VERSION         "DSP1903.0.191130.0"
+#define MCU_VERSION         "D2020032501"
 
 
 

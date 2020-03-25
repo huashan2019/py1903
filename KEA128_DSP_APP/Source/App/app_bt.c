@@ -338,7 +338,7 @@ void BtDataAnalyse(void)
 						EQ_Rx.Freq 	= (pData[5]<<24)+(pData[6]<<16)+(pData[7]<<8)+pData[8];
 						//EQ.Gain	  = (pData[9]<<8 )+pData[10];
 						//EQ.Q_Factor = (pData[11]<<8)+pData[12];
-						//Dsp_EQ_Set(pData[0]/EQ_NUM_CNT,(EQ_NUM_T)(pData[0]%EQ_NUM_CNT),&EQ_Rx);
+						Dsp_EQ_Set(pData[0]/EQ_NUM_CNT,(EQ_NUM_T)(pData[0]%EQ_NUM_CNT),&EQ_Rx);
 					}
 					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(pData[0],BtRx_SubID));
 					break;
@@ -552,7 +552,7 @@ void BtDataAnalyse(void)
 			}
 			break;
 			case A2M_BT_IAP_CMD:
-				UartTxData(SCH_Uart_BT,"AT+OTA=1\r",sizeof("AT+OTA=1\r"));
+				UartTxData(SCH_Uart_BT,"AT+B SOTA 1\r\n",sizeof("AT+B SOTA 1\r\n"));
 				break;
 			case A2M_IAP_CMD:///===========================================================================================A2M_IAP_CMD 0x08================
 				if(BtRx_SubID==0x01)
@@ -763,7 +763,7 @@ void M2B_TxService(void)
 					pData[length_data++] = index;
 					{
 						SCH_U8 Channel = index/EQ_NUM_CNT;
-						EQ_NUM_T EQ_NUM = (EQ_NUM_T)(index%EQ_NUM_CNT+8);
+						EQ_NUM_T EQ_NUM = (EQ_NUM_T)(index%EQ_NUM_CNT);
 
 						pData[length_data++] = App_Dsp.Dsp_Data.EQ_Data[Channel][EQ_NUM].Gain>>8;
 						pData[length_data++] = App_Dsp.Dsp_Data.EQ_Data[Channel][EQ_NUM].Gain;

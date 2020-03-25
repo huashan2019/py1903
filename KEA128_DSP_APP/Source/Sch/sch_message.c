@@ -33,6 +33,11 @@ SCH_BOOL PostMessage(MSG_MODULE Module, SCH_U8 ID, SCH_U16 param)
 	MESSAGE Msg;
 	Msg.ID=ID;
 	Msg.prm=param;
+	if(ID == 0x01 && param == 0x3)
+	{
+		Msg.ID=ID;
+		Msg.prm=param;
+	}
 	return Queue_In(&MESSAGE_QUEUE[Module], &Msg, 1);
 }
 SCH_BOOL InsertMessage(MSG_MODULE Module,SCH_U8 ID,SCH_U16 param)

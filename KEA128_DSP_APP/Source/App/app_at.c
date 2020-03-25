@@ -29,11 +29,12 @@ void AtDataAnalyse(SCH_U8 *Data)
 	
 	//	UartTxData(SCH_Uart_BT,BT_NAME_GET,sizeof(BT_NAME_GET)-1);
 	}
-	//if(sch_compare(Data,"GLBD 0",6)==TRUE)
-	//	UartTxData(SCH_Uart_BT,BT_NAME_SET,sizeof(BT_NAME_SET)-1);
+	if(sch_compare(Data,"GVER ",4)==TRUE)
+		UartTxData(SCH_Uart_BT,BT_NAME_SET,sizeof(BT_NAME_SET)-1);
 	if(sch_compare(Data,"HFCONN ",6)==TRUE)
 	{/*BT ADDR*/
 		sch_memcpy(BT_Addr,&Data[9],sizeof(BT_Addr));
+		if(BtSPPCONFlag || BtGATTCONFlag)
 		PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
 
 		//SysWaitMs(1);
@@ -42,6 +43,7 @@ void AtDataAnalyse(SCH_U8 *Data)
 	if(sch_compare(Data,"GLBD ",4)==TRUE)
 	{/*BT ADDR*/
 		sch_memcpy(BT_Addr,&Data[7],sizeof(BT_Addr));
+		if(BtSPPCONFlag || BtGATTCONFlag)
 		PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
 
 		//SysWaitMs(1);
