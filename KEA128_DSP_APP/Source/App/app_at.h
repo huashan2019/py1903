@@ -18,6 +18,8 @@
 #define BT_NAME_GET         "AT+B GLDN\r"
 #define BT_FACTORYRESET     "AT+FACTORYRESET\r"
 #define BT_LBDADDR_GET      "AT+B GLBD\r"
+#define BT_GOTA_STAT_GET      "AT+B GOTA\r"
+
 
 #define BT_HFDISC_SET      "AT+B HFDISC\r"
 
@@ -26,6 +28,9 @@
 
 extern SCH_U8 BtSPPCONFlag;
 extern SCH_U8 BtGATTCONFlag;
+extern SCH_U8 BtPHFCONFlag;
+
+static SCH_U8 PCSTATFlag;
 
 extern SCH_U8 BtTemplag;
 extern SCH_U8 BtTemplag1;
@@ -38,7 +43,7 @@ typedef struct
 extern Rx_BLE_DATA      BtRxBLE;
 
 ///======================================================
-extern SCH_U8 BT_Addr[12];
+extern SCH_U8 BT_Addr[12+1];/*add one byte for HPF connect stat*/
 
 extern void AtDataAnalyse(SCH_U8 *Data);
 #endif

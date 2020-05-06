@@ -435,7 +435,11 @@ void BtDataAnalyse(void)
 						if(Uart_CONNECT == SCH_Uart_BT)
 							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
 						else
-							UartTxData(SCH_Uart_BT,BT_LBDADDR_GET,sizeof(BT_LBDADDR_GET));
+							{
+								//UartTxData(SCH_Uart_BT,BT_LBDADDR_GET,sizeof(BT_LBDADDR_GET));
+								if(/*BtSPPCONFlag || BtGATTCONFlag || */!PCSTATFlag)
+								PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
+							}
 					}
 					break;
 				case 0x0D:///“Ù¡øÃı
@@ -728,7 +732,17 @@ void M2B_TxService(void)
 					pData[length_data++] = index;
 					if(index == 0x01)
 					{
+						BT_Addr[12] = 0;
+						if(BtSPPCONFlag || BtGATTCONFlag || BtPHFCONFlag) 
+						{
+							if(BtPHFCONFlag)BT_Addr[12] = 1;/*phone connect*/
+							if(BtSPPCONFlag)BT_Addr[12] = 2;/*spp connect*/
+							if(BtGATTCONFlag)BT_Addr[12] = 3;/*ble connect*/
+						}
+
 						sch_memcpy(pData+1,BT_Addr,sizeof(BT_Addr));
+						
+							
 						length_data += sizeof(BT_Addr);
 					}
 					break;

@@ -57,7 +57,9 @@ int main(void)
 	if(BtTemplag1/*sch_compare(Data,"A2DPSTAT 1",8)==TRUE*/)
 	{/*BLEADV*/
 		BtTemplag1 = 0;
-		UartTxData(SCH_Uart_BT,BT_HFDISC_SET,sizeof(BT_HFDISC_SET)-1);
+		//UartTxData(SCH_Uart_BT,BT_HFDISC_SET,sizeof(BT_HFDISC_SET)-1);
+		
+		UartTxData(SCH_Uart_BT,"AT+B SOTA 1\r\n",sizeof("AT+B SOTA 1\r\n"));
 	}
 	}
 }

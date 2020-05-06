@@ -357,7 +357,7 @@ void Dsp_PowerOnInit(void)
 			{
 				App_Dsp.DSP_Updata_State = Load_Mode_Name;
 				///PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
-				if(BtSPPCONFlag || BtGATTCONFlag)
+				if(/*BtSPPCONFlag || BtGATTCONFlag || */!PCSTATFlag)
 				{
 				PostMessage(BT_MODULE,M2A_SYS_CMD, M2A_MCU_VER);
 

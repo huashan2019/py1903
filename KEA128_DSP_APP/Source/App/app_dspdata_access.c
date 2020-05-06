@@ -11,6 +11,7 @@
 */
 #include "include.h"
 
+
 SCH_BOOL Dsp_Store(SCH_U8 Num)
 {
 	if(Num == 0)
@@ -198,7 +199,7 @@ void Dsp_StoreLoadPro(void)
 				App_Dsp.DspNum = App_Dsp.DspUpdataNum;
 				Flash_Set_DspNum();
 				CheckVol();
-				if(BtSPPCONFlag || BtGATTCONFlag)
+				if(/*BtSPPCONFlag || BtGATTCONFlag || */!PCSTATFlag)
 				{
 					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x00,0x00));
 					PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0xFE,0x00));///Ë¢ÐÂ

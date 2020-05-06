@@ -39,8 +39,11 @@ void Check_Uart(void)
 		Uart_OTHER1  = SCH_Uart_PC;
 	}
 }
+
+
 void Change_Uart(Uart_T Uart)
 {
+
 	if(App_Dsp.DSP_Updata_State == UpData_Idle)
 	{
 		if(Uart == Uart_OTHER)
