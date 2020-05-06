@@ -73,15 +73,15 @@ buf[4] = 0x20;
 
 
 buf[5] = 0x42;/*length H:从0x80开始，0x0d结束*/
-buf[6] = 0x4c/*ngth L*/
-buf[7] = 0x45
-buf[8] = 0x44
-buf[9] = 0x41/*\r*/
+buf[6] = 0x4c;/*ngth L*/
+buf[7] = 0x45;
+buf[8] = 0x44;
+buf[9] = 0x41;/*\r*/
 
-buf[10]=0x54
+buf[10]=0x54;
 buf[11]=0x41;
-buf[12]=0x20
-buf[13]=0x31
+buf[12]=0x20;
+buf[13]=0x31;
 buf[14]=0x0d;/*\r*/
 UartTxData(Uart_ARM, buf, 15);
 
@@ -390,7 +390,7 @@ void ArmDataRxPro(void)
 					UartRxData(Uart_ARM, ArmModuel.ArmRxData, 1);
 					if(ArmModuel.ArmRxData[0] != HEAD_ADDRESS_ARM)
 						break;
-					//Printf("APP 0xaa :\n");
+					Printf("APP 0xaa :\n");
 					ArmModuel.ArmRxData_Flag = 1;
 					break;
 				case 1:
@@ -401,7 +401,7 @@ void ArmDataRxPro(void)
 						break;
 					}
 					ArmModuel.ArmRxData_Flag = 2;
-					//Printf("APP 0x55 :\n");
+					Printf("APP 0x55 :\n");
 					break;
 				case 2:
 					UartRxData(Uart_ARM, &ArmModuel.ArmRxData[2], 1);
@@ -417,7 +417,7 @@ void ArmDataRxPro(void)
 					if(UartRxData(Uart_ARM, &ArmModuel.ArmRxData[3], ArmModuel.ArmRxData_Length-3)==FALSE)
 						return;
 					
-					//Printf("APP end1 :\n");
+					Printf("APP end1 :\n");
 					if(ArmModuel.ArmRxData[ArmModuel.ArmRxData_Length-1] == GetCheckData_Xor(ArmModuel.ArmRxData,ArmModuel.ArmRxData_Length-1))
 					{
 						ArmDataAnalyse();

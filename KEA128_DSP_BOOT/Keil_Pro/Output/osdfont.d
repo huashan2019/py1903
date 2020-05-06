@@ -3,7 +3,7 @@
 .\output\osdfont.o: ..\Source\common\common.h
 .\output\osdfont.o: ..\Source\cpu\arm_cm0.h
 .\output\osdfont.o: ..\Source\platforms\kea128_config.h
-.\output\osdfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\osdfont.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\osdfont.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\osdfont.o: ..\Source\cpu\core_cm0plus.h
 .\output\osdfont.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\osdfont.o: ..\Source\Sch\sch_common.h
 .\output\osdfont.o: ..\Source\Sch\sch_message.h
 .\output\osdfont.o: ..\Source\Sch\sch_printf.h
-.\output\osdfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\osdfont.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\osdfont.o: ..\Source\App\bsp.h
 .\output\osdfont.o: ..\Source\App\system.h
 .\output\osdfont.o: ..\Source\App\task.h
 .\output\osdfont.o: ..\Source\App\uicc_def.h
-.\output\osdfont.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\osdfont.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\osdfont.o: ..\Source\TEF663X\Hero_Init.h
 .\output\osdfont.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\osdfont.o: ..\Source\TEF663X\Audio_6635.h

@@ -3,7 +3,7 @@
 .\output\osdspi.o: ..\Source\common\common.h
 .\output\osdspi.o: ..\Source\cpu\arm_cm0.h
 .\output\osdspi.o: ..\Source\platforms\kea128_config.h
-.\output\osdspi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\osdspi.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\osdspi.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\osdspi.o: ..\Source\cpu\core_cm0plus.h
 .\output\osdspi.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\osdspi.o: ..\Source\Sch\sch_common.h
 .\output\osdspi.o: ..\Source\Sch\sch_message.h
 .\output\osdspi.o: ..\Source\Sch\sch_printf.h
-.\output\osdspi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\osdspi.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\osdspi.o: ..\Source\App\bsp.h
 .\output\osdspi.o: ..\Source\App\system.h
 .\output\osdspi.o: ..\Source\App\task.h
 .\output\osdspi.o: ..\Source\App\uicc_def.h
-.\output\osdspi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\osdspi.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\osdspi.o: ..\Source\TEF663X\Hero_Init.h
 .\output\osdspi.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\osdspi.o: ..\Source\TEF663X\Audio_6635.h

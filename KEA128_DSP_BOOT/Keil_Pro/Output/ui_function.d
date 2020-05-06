@@ -3,7 +3,7 @@
 .\output\ui_function.o: ..\Source\common\common.h
 .\output\ui_function.o: ..\Source\cpu\arm_cm0.h
 .\output\ui_function.o: ..\Source\platforms\kea128_config.h
-.\output\ui_function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\ui_function.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\ui_function.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\ui_function.o: ..\Source\cpu\core_cm0plus.h
 .\output\ui_function.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\ui_function.o: ..\Source\Sch\sch_common.h
 .\output\ui_function.o: ..\Source\Sch\sch_message.h
 .\output\ui_function.o: ..\Source\Sch\sch_printf.h
-.\output\ui_function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\ui_function.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\ui_function.o: ..\Source\App\bsp.h
 .\output\ui_function.o: ..\Source\App\system.h
 .\output\ui_function.o: ..\Source\App\task.h
 .\output\ui_function.o: ..\Source\App\uicc_def.h
-.\output\ui_function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\ui_function.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\ui_function.o: ..\Source\TEF663X\Hero_Init.h
 .\output\ui_function.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\ui_function.o: ..\Source\TEF663X\Audio_6635.h

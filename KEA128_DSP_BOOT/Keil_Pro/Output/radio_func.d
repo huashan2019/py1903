@@ -3,7 +3,7 @@
 .\output\radio_func.o: ..\Source\common\common.h
 .\output\radio_func.o: ..\Source\cpu\arm_cm0.h
 .\output\radio_func.o: ..\Source\platforms\kea128_config.h
-.\output\radio_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\radio_func.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\radio_func.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\radio_func.o: ..\Source\cpu\core_cm0plus.h
 .\output\radio_func.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\radio_func.o: ..\Source\Sch\sch_common.h
 .\output\radio_func.o: ..\Source\Sch\sch_message.h
 .\output\radio_func.o: ..\Source\Sch\sch_printf.h
-.\output\radio_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\radio_func.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\radio_func.o: ..\Source\App\bsp.h
 .\output\radio_func.o: ..\Source\App\system.h
 .\output\radio_func.o: ..\Source\App\task.h
 .\output\radio_func.o: ..\Source\App\uicc_def.h
-.\output\radio_func.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\radio_func.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\radio_func.o: ..\Source\TEF663X\Hero_Init.h
 .\output\radio_func.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\radio_func.o: ..\Source\TEF663X\Audio_6635.h

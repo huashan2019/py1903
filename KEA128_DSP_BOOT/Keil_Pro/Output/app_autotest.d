@@ -3,7 +3,7 @@
 .\output\app_autotest.o: ..\Source\common\common.h
 .\output\app_autotest.o: ..\Source\cpu\arm_cm0.h
 .\output\app_autotest.o: ..\Source\platforms\kea128_config.h
-.\output\app_autotest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\app_autotest.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\app_autotest.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\app_autotest.o: ..\Source\cpu\core_cm0plus.h
 .\output\app_autotest.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\app_autotest.o: ..\Source\Sch\sch_common.h
 .\output\app_autotest.o: ..\Source\Sch\sch_message.h
 .\output\app_autotest.o: ..\Source\Sch\sch_printf.h
-.\output\app_autotest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\app_autotest.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\app_autotest.o: ..\Source\App\bsp.h
 .\output\app_autotest.o: ..\Source\App\system.h
 .\output\app_autotest.o: ..\Source\App\task.h
 .\output\app_autotest.o: ..\Source\App\uicc_def.h
-.\output\app_autotest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\app_autotest.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\app_autotest.o: ..\Source\TEF663X\Hero_Init.h
 .\output\app_autotest.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\app_autotest.o: ..\Source\TEF663X\Audio_6635.h

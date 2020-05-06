@@ -3,7 +3,7 @@
 .\output\tw8836.o: ..\Source\common\common.h
 .\output\tw8836.o: ..\Source\cpu\arm_cm0.h
 .\output\tw8836.o: ..\Source\platforms\kea128_config.h
-.\output\tw8836.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\tw8836.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\tw8836.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\tw8836.o: ..\Source\cpu\core_cm0plus.h
 .\output\tw8836.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\tw8836.o: ..\Source\Sch\sch_common.h
 .\output\tw8836.o: ..\Source\Sch\sch_message.h
 .\output\tw8836.o: ..\Source\Sch\sch_printf.h
-.\output\tw8836.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\tw8836.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\tw8836.o: ..\Source\App\bsp.h
 .\output\tw8836.o: ..\Source\App\system.h
 .\output\tw8836.o: ..\Source\App\task.h
 .\output\tw8836.o: ..\Source\App\uicc_def.h
-.\output\tw8836.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\tw8836.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\tw8836.o: ..\Source\TEF663X\Hero_Init.h
 .\output\tw8836.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\tw8836.o: ..\Source\TEF663X\Audio_6635.h

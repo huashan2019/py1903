@@ -158,7 +158,12 @@ void MCU_Updata_pro(void)
 			break;
 			
 		case IAP_DATA_DLY:
-			if(Iap.IAP_DelayTime >= T200MS_8)
+			if(Iap.IAP_DelayTime >= T8MS_8 && (Is_Uart_Choose_PC() || Is_Uart_Choose_PC1()))
+			{
+				Iap.IapState = IAP_DATA;
+				PostMessage(ARM_MODULE,M2A_IAP_CMD,0x02);
+			}
+			else if(Iap.IAP_DelayTime >= T400MS_8)
 			{
 				Iap.IapState = IAP_DATA;
 				PostMessage(ARM_MODULE,M2A_IAP_CMD,0x02);

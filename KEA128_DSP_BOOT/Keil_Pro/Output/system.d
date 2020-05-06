@@ -3,7 +3,7 @@
 .\output\system.o: ..\Source\common\common.h
 .\output\system.o: ..\Source\cpu\arm_cm0.h
 .\output\system.o: ..\Source\platforms\kea128_config.h
-.\output\system.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\system.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\output\system.o: ..\Source\cpu\headers\SKEAZ1284.h
 .\output\system.o: ..\Source\cpu\core_cm0plus.h
 .\output\system.o: ..\Source\cpu\core_cmInstr.h
@@ -39,12 +39,12 @@
 .\output\system.o: ..\Source\Sch\sch_common.h
 .\output\system.o: ..\Source\Sch\sch_message.h
 .\output\system.o: ..\Source\Sch\sch_printf.h
-.\output\system.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\output\system.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\output\system.o: ..\Source\App\bsp.h
 .\output\system.o: ..\Source\App\system.h
 .\output\system.o: ..\Source\App\task.h
 .\output\system.o: ..\Source\App\uicc_def.h
-.\output\system.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\output\system.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\output\system.o: ..\Source\TEF663X\Hero_Init.h
 .\output\system.o: ..\Source\TEF663X\Hero_Audio_Drv.h
 .\output\system.o: ..\Source\TEF663X\Audio_6635.h

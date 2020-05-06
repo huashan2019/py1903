@@ -126,7 +126,7 @@
 
 #define WDOG_EN
 
-#define MCU_VERSION         "BOOT.0.180518.0"
+#define MCU_VERSION         "BOOT.0.200506.0"
 
 
 
