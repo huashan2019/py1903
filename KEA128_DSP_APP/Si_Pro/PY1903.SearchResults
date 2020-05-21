@@ -1,6 +1,4 @@
----- BT_BLEADV_SET Matches (9 in 2 files) ----
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		//UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		//UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
-App_at.h (e:\project\py1903\kea128_dsp_app\source\app):#define BT_BLEADV_SET       "AT+B BLEADV 1\r"
+---- BT_VER_GET Matches (5 in 3 files) ----
+App_at.h (e:\project\py1903\kea128_dsp_app\source\app):#define BT_VER_GET       	"AT+B GVER\r"
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							UartTxData(SCH_Uart_BT,BT_VER_GET,sizeof(BT_VER_GET));
+Main.c (e:\project\py1903\kea128_dsp_app\source\app):		UartTxData(SCH_Uart_BT,BT_VER_GET,sizeof(BT_VER_GET)-1);

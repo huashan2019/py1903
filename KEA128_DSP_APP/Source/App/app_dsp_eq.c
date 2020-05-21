@@ -161,7 +161,7 @@ void Dsp_EQ_Left_Req(void)
 	if((App_Dsp.RequestEQ_Left&0x8000)==0)
 		return;
 	Timer++;
-	if(BtSPPCONFlag)
+	if(BtSPPCONFlag || bGUKAIBLE)
 	{
 		if((Timer >= T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 			||(Timer >= T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
@@ -182,7 +182,7 @@ void Dsp_EQ_Left_Req(void)
 	{
 		if((Timer == T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 			||(Timer == T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
-			||(Timer == T128MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
+			||(Timer == T320MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
 		{
 			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Left,0x14)))
 			{
@@ -192,7 +192,7 @@ void Dsp_EQ_Left_Req(void)
 		}
 		if((Timer >= T64MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 		||(Timer >= T64MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
-		||(Timer >= T240MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
+		||(Timer >= T480MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
 		{
 			Timer = 0;
 			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Left,0x15)))
@@ -216,7 +216,7 @@ void Dsp_EQ_Right_Req(void)
 	if((App_Dsp.RequestEQ_Right&0x8000)==0)
 		return;
 	Timer++;
-	if(BtSPPCONFlag)
+	if(BtSPPCONFlag || bGUKAIBLE)
 	{
 		if((Timer >= T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 			||(Timer >= T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
@@ -237,7 +237,7 @@ void Dsp_EQ_Right_Req(void)
 	{
 		if((Timer == T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 			||(Timer == T32MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
-			||(Timer == T64MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
+			||(Timer == T96MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
 		{
 			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Right,0x14)))
 			{
@@ -246,7 +246,7 @@ void Dsp_EQ_Right_Req(void)
 		}
 		if((Timer >= T64MS_8)&&(Uart_CONNECT == SCH_Uart_PC)
 		||(Timer >= T64MS_8)&&(Uart_CONNECT == SCH_Uart_PC1)
-		||(Timer >= T128MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
+		||(Timer >= T200MS_8)&&(Uart_CONNECT == SCH_Uart_BT))
 		{
 			Timer = 0;
 			if(PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(App_Dsp.RequestEQ_Right,0x15)))

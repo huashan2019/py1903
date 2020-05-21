@@ -11,7 +11,11 @@
 */
 #include "include.h"
 SCH_U8 BT_Addr[12+1];/*add one byte for HPF connect stat*/
+SCH_U8 BLE_GVER[10];
+
 SCH_U8 BtSPPCONFlag;
+SCH_U8 bGUKAIBLE;
+
 SCH_U8 BtGATTCONFlag;
 SCH_U8 BtPHFCONFlag;
 
@@ -32,7 +36,17 @@ void AtDataAnalyse(SCH_U8 *Data)
 	//	UartTxData(SCH_Uart_BT,BT_NAME_GET,sizeof(BT_NAME_GET)-1);
 	}
 	if(sch_compare(Data,"GVER ",4)==TRUE)
+	{
+		bGUKAIBLE = 0;
+		sch_memcpy(BLE_GVER,&Data[5],sizeof(BLE_GVER));
+		if(sch_compare(BLE_GVER,"PY072",5)==TRUE)	bGUKAIBLE = 1;
+
+		
+		if(/*BtSPPCONFlag || BtGATTCONFlag || */!PCSTATFlag)
+		PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,0x0C));
+
 		UartTxData(SCH_Uart_BT,BT_NAME_SET,sizeof(BT_NAME_SET)-1);
+	}
 	if(sch_compare(Data,"HFCONN ",6)==TRUE)
 	{/*BT ADDR*/
 		sch_memcpy(BT_Addr,&Data[9],sizeof(BT_Addr)-1);

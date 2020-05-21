@@ -441,6 +441,17 @@ void BtDataAnalyse(void)
 								PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x01,0x0C));
 							}
 					}
+					else if(pData[0] == 0x02)
+					{
+						if(Uart_CONNECT == SCH_Uart_BT)
+							PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,0x0C));
+						else
+						{
+							//if(/*BtSPPCONFlag || BtGATTCONFlag || */!PCSTATFlag)
+							//PostMessage(BT_MODULE,M2B_DSP_DATA,SCH_WORD(0x02,0x0C));
+							UartTxData(SCH_Uart_BT,BT_VER_GET,sizeof(BT_VER_GET));
+						}
+					}
 					break;
 				case 0x0D:///音量条
 					if(pData[0] == 0x01)///总音量条
@@ -623,7 +634,10 @@ void M2B_TxService(void)
 			{
 				case 0x00:
 					pData[length_data++] = index;
-					pData[length_data++] = App_Dsp.DspNum;
+					if(App_Dsp.DspNum == 0xff) 
+						pData[length_data++] = 0;
+					else
+						pData[length_data++] = App_Dsp.DspNum;
 					break;
 				case 0x01:///DSP状态
 					pData[length_data++] = (App_Dsp.DspPwrState == DSP_NORMAL) ? 1 : 0;
@@ -744,6 +758,11 @@ void M2B_TxService(void)
 						
 							
 						length_data += sizeof(BT_Addr);
+					}
+					else if(index == 0x02)
+					{
+						sch_memcpy(pData+1,BLE_GVER,sizeof(BLE_GVER));
+						length_data += sizeof(BLE_GVER);
 					}
 					break;
 				case 0x0D:///音量条
@@ -893,7 +912,7 @@ void TASK_Bt_Pro(void)
 		BtTxModuel.Check_ResendTimer++;
 		if(((BtTxModuel.Check_ResendTimer==T200MS_8)&&(Uart_CONNECT == SCH_Uart_PC))
 			||((BtTxModuel.Check_ResendTimer==T200MS_8)&&(Uart_CONNECT == SCH_Uart_PC1))
-			||((BtTxModuel.Check_ResendTimer==T480MS_8)&&(Uart_CONNECT == SCH_Uart_BT)))
+			||((BtTxModuel.Check_ResendTimer==T2S_8)&&(Uart_CONNECT == SCH_Uart_BT)))
 		{  	
 			BtTxModuel.Check_ResendTimer=0;
 			if(++BtTxModuel.Check_ResendCounte<3)
