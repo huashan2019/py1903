@@ -1,4 +1,7 @@
----- BT_VER_GET Matches (5 in 3 files) ----
-App_at.h (e:\project\py1903\kea128_dsp_app\source\app):#define BT_VER_GET       	"AT+B GVER\r"
-App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):							UartTxData(SCH_Uart_BT,BT_VER_GET,sizeof(BT_VER_GET));
-Main.c (e:\project\py1903\kea128_dsp_app\source\app):		UartTxData(SCH_Uart_BT,BT_VER_GET,sizeof(BT_VER_GET)-1);
+---- BLE_GVER Matches (8 in 3 files) ----
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):SCH_U8 BLE_GVER[30];
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		sch_memcpy(BLE_GVER,&Data[5],sizeof(BLE_GVER));
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		if(sch_compare(BLE_GVER,"PY072",5)==TRUE)	bGUKAIBLE = 1;
+App_at.h (e:\project\py1903\kea128_dsp_app\source\app):extern SCH_U8 BLE_GVER[30];
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						sch_memcpy(pData+1,BLE_GVER,sizeof(BLE_GVER));
+App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						length_data += sizeof(BLE_GVER);

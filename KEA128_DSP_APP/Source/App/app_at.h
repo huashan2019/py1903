@@ -46,7 +46,7 @@ extern Rx_BLE_DATA      BtRxBLE;
 
 ///======================================================
 extern SCH_U8 BT_Addr[12+1];/*add one byte for HPF connect stat*/
-extern SCH_U8 BLE_GVER[10];
+extern SCH_U8 BLE_GVER[30];
 
 extern void AtDataAnalyse(SCH_U8 *Data);
 #endif

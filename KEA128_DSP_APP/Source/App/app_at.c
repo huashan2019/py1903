@@ -11,7 +11,7 @@
 */
 #include "include.h"
 SCH_U8 BT_Addr[12+1];/*add one byte for HPF connect stat*/
-SCH_U8 BLE_GVER[10];
+SCH_U8 BLE_GVER[30];
 
 SCH_U8 BtSPPCONFlag;
 SCH_U8 bGUKAIBLE;
@@ -134,9 +134,9 @@ void AtDataAnalyse(SCH_U8 *Data)
 	if(sch_compare(Data,"SNKINIT ",8)==TRUE)
 	{
 		PCSTATFlag = 0;
-		UartTxData(SCH_Uart_BT,BT_GOTA_STAT_GET,sizeof(BT_GOTA_STAT_GET));
+		//UartTxData(SCH_Uart_BT,BT_GOTA_STAT_GET,sizeof(BT_GOTA_STAT_GET));
 		
-		//UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
+		UartTxData(SCH_Uart_BT,BT_BLEADV_SET,sizeof(BT_BLEADV_SET)-1);
 		UartTxData(SCH_Uart_BT,BT_NAME_SET,sizeof(BT_NAME_SET)-1);
 	}
 	else
