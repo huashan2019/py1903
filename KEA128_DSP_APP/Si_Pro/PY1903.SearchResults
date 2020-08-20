@@ -1,0 +1,3 @@
+---- TurnOn_AUDIO_SWITCH Matches (2 in 2 files) ----
+App_at.c (e:\project\py1903\kea128_dsp_app\source\app):			TurnOn_AUDIO_SWITCH;
+Mw_gpio.h (e:\project\py1903\kea128_dsp_app\source\app):#define TurnOn_AUDIO_SWITCH       GPIO_PinSet(GPIO_AUDIO_SWITCH)
