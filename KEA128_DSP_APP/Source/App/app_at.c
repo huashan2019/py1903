@@ -57,6 +57,7 @@ void AtDataAnalyse(SCH_U8 *Data)
 	}
 	else if(sch_compare(Data,"HFDISC ",6)==TRUE)
 	{
+		TurnOff_AUDIO_SWITCH;
 	}
 
 	if(sch_compare(Data,"A2DPCONN ",9)==TRUE)
@@ -65,8 +66,33 @@ void AtDataAnalyse(SCH_U8 *Data)
 	}
 	else if(sch_compare(Data,"A2DPDISC ",9)==TRUE)
 	{
-		if(Data[9]-0x30 == 0) BtPHFCONFlag = 0;
+		if(Data[9]-0x30 == 0) 
+		{
+			BtPHFCONFlag = 0;
+			TurnOff_AUDIO_SWITCH;
+		}
 	}
+	
+	if(sch_compare(Data,"PLAYSTATUS ",11)==TRUE)
+	{
+		if(Data[11]-0x30 == 0 || Data[11]-0x30 == 2)/*STOP PAUSE*/
+		{
+			TurnOff_AUDIO_SWITCH;
+		}
+		else if(Data[11]-0x30 == 1)/*PLAYING*/
+		{
+			TurnOn_AUDIO_SWITCH;
+		}
+		else if(Data[11]-0x30 == 0XFF)/*ERR*/
+		{
+			TurnOff_AUDIO_SWITCH;
+		}
+	}
+	else if(sch_compare(Data,"A2DPDISC ",9)==TRUE)
+	{
+
+	}
+	
 	if(sch_compare(Data,"GLBD ",4)==TRUE)
 	{/*BT ADDR*/
 		sch_memcpy(BT_Addr,&Data[7],sizeof(BT_Addr)-1);

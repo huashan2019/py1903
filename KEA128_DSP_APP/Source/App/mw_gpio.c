@@ -67,6 +67,70 @@ void DSP_Test_Detect(void)
 		DSP_TEST_Detect.IO_SamplingCounter = 0;
 	}
 }
+
+
+/********************************************************************************
+**  Function    : AMP_Detect
+**  Author      : wenjunHu
+**  Created on  : 20180724
+**  Description :
+**  Return      : 
+********************************************************************************/
+IO_DET_T AMP_Detect;
+IO_DET_T AMP1_Detect;
+
+void AMP_Init(void)
+{///===
+	GPIO_PinInit(GPIO_AMP_DECT, GPIO_PinInput_InternalPullup);
+	sch_memset(&AMP_Detect, 0x00, sizeof(AMP_Detect));
+	
+	GPIO_PinInit(GPIO_AMP1_DECT, GPIO_PinInput_InternalPullup);
+	sch_memset(&AMP1_Detect, 0x00, sizeof(AMP1_Detect));
+}
+SCH_BOOL AMP_OFF_FLAG = 0;
+SCH_BOOL AMP1_OFF_FLAG = 0;
+extern void LED_Fail_Ctl(SCH_BOOL OnOff);
+
+void AMP_Diag_Detect(void)
+{
+	if(SysPower.nPowerState != POWER_NORMAL_RUN)
+		return;
+	AMP_Detect.IO_Status = AMP_DET_LVON;
+	AMP1_Detect.IO_Status = AMP1_DET_LVON;
+	if(AMP_Detect.IO_Status != AMP_OFF_FLAG || AMP1_Detect.IO_Status != AMP1_OFF_FLAG)
+	{
+		if(++AMP_Detect.IO_SamplingCounter >= T200MS_8)
+		{
+			AMP_Detect.IO_SamplingCounter = 0;
+			if(AMP_Detect.IO_Status || AMP1_Detect.IO_Status)
+			{
+				if(AMP_Detect.IO_Status)
+					AMP_OFF_FLAG = 1;
+				if(AMP1_Detect.IO_Status)
+					AMP1_OFF_FLAG = 1;
+				//Dsp_OFF();
+				LED_Fail_Ctl(ON);
+				AMP_TURN_OFF();
+				AudioMute(HARDON);
+			}
+			else
+			{
+				AMP_OFF_FLAG = 0;
+				AMP1_OFF_FLAG = 0;
+				Dsp_ON();
+				LED_Fail_Ctl(OFF);
+				AMP_TURN_ON();
+				AudioMute(HARDOFF);
+			}
+		}	
+	}
+	else
+	{
+		AMP_Detect.IO_SamplingCounter = 0;
+	}
+}
+
+
 /********************************************************************************
 **  Function	: SYS_POWER
 **  Author		: 
@@ -80,6 +144,7 @@ void PWR_IO_Init(void)
 	///GPIO_PinInit(GPIO_SYS_12V_CTL, GPIO_PinOutput);
 	GPIO_PinInit(GPIO_SYS_POWER_CTL, GPIO_PinOutput);
 	GPIO_PinInit(GPIO_ACC_EN_CTL,    GPIO_PinOutput);
+	GPIO_PinInit(GPIO_PRE_AMP_CTL,	 GPIO_PinOutput);
 }
 void SYS_Power_Ctl(SCH_BOOL OnOff)
 {
@@ -115,7 +180,6 @@ void ACC_EN_Ctl(SCH_BOOL OnOff)
 void AMP_IO_Init(void)
 {///===
 	GPIO_PinInit(GPIO_AMP_CTL,   GPIO_PinOutput);
-	GPIO_PinInit(GPIO_AMP_BEEP,  GPIO_PinOutput);
 	GPIO_PinInit(GPIO_AMP_DECT,  GPIO_PinInput_InternalPullup);
 }
 /********************************************************************************
@@ -142,6 +206,7 @@ void GPIOInit(void)
 	DSP_IO_Init();
 	BT_IO_Init();
 	DSP_TEST_Init();
+	AMP_Init();
 	Start_IO_Init();
 	PWR_IO_Init();
 	AMP_IO_Init();

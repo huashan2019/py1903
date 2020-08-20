@@ -20,19 +20,18 @@
 void MUTE_IO_Init(void)
 {///===
 	GPIO_PinInit(GPIO_MUTE_CTL, GPIO_PinOutput);
+	TurnOn_DIGITAL_MUTE;
 }
 void MUTE_Ctl(SCH_BOOL OnOff)
 {
 	if(OnOff == ON)
 	{
-		TurnOn_MUTE;
 		if(!Get_MUTE_Flag)
 			AmpMute(ON);
 		Set_MUTE_Flag;
 	}
 	else
 	{
-		TurnOff_MUTE;
 		if(Get_MUTE_Flag)
 			AmpMute(OFF);
 		Clr_MUTE_Flag;

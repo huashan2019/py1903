@@ -31,12 +31,15 @@ void SystemPowerUp(void)
 	ClearAllModeMessage();
 	GPIOInit();
 	AudioMute(HARDON);
+	TurnOn_DIGITAL_MUTE;
+	TurnOff_AUDIO_SWITCH;/*wink channel*/
 	DSP_RESET_HOLD;
 	BT_RESET_HOLD;
 	AD1938_RESET_HOLD;
 	AD1978_RESET_HOLD;
 	SYS_Power_Ctl(ON);
 	ACC_EN_Ctl(ON);
+	TurnOn_PRE_AMP;
 	///TurnOn_REM_EN;
 }
 void PowerOnSystemModule(void)
@@ -53,13 +56,17 @@ void PowerOnSystemModule(void)
 void PowerOffSystemModule(void)
 {
 	AudioMute(HARDON);
+	TurnOn_DIGITAL_MUTE;
 	///App_Dsp.DspPwrState = DSP_CLOSE;
 }
 void EnterPowerOff(void)
 {
 	AudioMute(HARDON);
+	TurnOn_DIGITAL_MUTE;
+	TurnOff_AUDIO_SWITCH;
 	AMP_TURN_OFF();
 	SYS_Power_Ctl(OFF);
+	TurnOff_PRE_AMP;
 	ACC_EN_Ctl(OFF);
 	DSP_RESET_HOLD;
 	BT_RESET_HOLD;
@@ -82,6 +89,7 @@ void PowerMessage(void)
 			SysPower.nPowerState=POWER_ON_DELAY;
 			SysPower.Power_Timer=0;
 			AudioMute(HARDON);
+			TurnOn_DIGITAL_MUTE;
 			///CCFL_Power_Ctl(OFF);
 			ClearAllModeMessage();
 			break;
@@ -169,6 +177,7 @@ void TASK_Power_Pro(void)
 			if(App_Dsp.DspPwrState == DSP_NORMAL&&SysPower.Power_Timer>=T4S_8)
 			{
 				AudioMute(HARDOFF);
+				TurnOff_DIGITAL_MUTE;
 				Set_AppStartOk;
 				//UartTxData(SCH_Uart_BT,BT_NAME_SET,sizeof(BT_NAME_SET));
 				

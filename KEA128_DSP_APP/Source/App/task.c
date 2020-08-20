@@ -37,6 +37,7 @@ void Task_8ms_Pro(void)
 	TASK_Dsp_Pro();
 	Start_Detect();
 	DSP_Test_Detect();
+	AMP_Diag_Detect();
 }
 
 void Task_16ms_Pro(void)

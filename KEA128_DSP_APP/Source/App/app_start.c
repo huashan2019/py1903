@@ -62,6 +62,9 @@ void Audio_Init(void)
 {	
 	GPIO_PinInit(GPIO_AUDIO_DECT, GPIO_PinInput_InternalPullup);
 	sch_memset(&AudioDetect, 0x00, sizeof(AudioDetect));
+	
+	GPIO_PinInit(GPIO_AUDIO_SWITCH,  GPIO_PinOutput);
+	TurnOff_AUDIO_SWITCH;
 }
 void AUDIO_Detect(void)
 {

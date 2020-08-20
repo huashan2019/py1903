@@ -19,19 +19,33 @@
 ********************************************************************************/
 void LED_IO_Init(void)
 {///===
-	GPIO_PinInit(GPIO_LED_CTL, GPIO_PinOutput);
+	GPIO_PinInit(GPIO_LED_NORMAL_CTL, GPIO_PinOutput);
+	GPIO_PinInit(GPIO_LED_FAIL_CTL, GPIO_PinOutput);
 }
-void LED_Ctl(SCH_BOOL OnOff)
+void LED_Normal_Ctl(SCH_BOOL OnOff)
 {
 	if(OnOff == ON)
 	{
-		TurnOn_LED;
+		TurnOn_NORMAL_LED;
 	}
 	else
 	{
-		TurnOff_LED;
+		TurnOff_NORMAL_LED;
 	}
 }
+
+void LED_Fail_Ctl(SCH_BOOL OnOff)
+{
+	if(OnOff == ON)
+	{
+		TurnOn_FAIL_LED;
+	}
+	else
+	{
+		TurnOff_FAIL_LED;
+	}
+}
+
 /********************************************************************************
 **  Function	: TASK_LED_pro
 **  Author		: huwenjun
@@ -41,13 +55,14 @@ void LED_Ctl(SCH_BOOL OnOff)
 ********************************************************************************/
 void TASK_LED_pro(void)
 {
+	if(AMP_OFF_FLAG ||  AMP1_OFF_FLAG) return;
 	if(Get_SysPower_Flag)
 	{
-		LED_Ctl(ON);
+		LED_Normal_Ctl(ON);
 	}
 	else
 	{
-		LED_Ctl(OFF);
+		LED_Normal_Ctl(OFF);
 	}
 }
 

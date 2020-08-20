@@ -5,8 +5,8 @@
 ///#define MUTE_CTL            (GPIOH->ODR & GPIO_MUTE_CTL)
 #define IO_MUTE                GPIOA
 #define GPIO_MUTE_CTL      	   GPIO_PTD3//////
-#define TurnOn_MUTE        	   GPIO_PinSet(GPIO_MUTE_CTL)
-#define TurnOff_MUTE       	   GPIO_PinClear(GPIO_MUTE_CTL)
+#define TurnOn_DIGITAL_MUTE        	   GPIO_PinClear(GPIO_MUTE_CTL)  
+#define TurnOff_DIGITAL_MUTE       	   GPIO_PinSet(GPIO_MUTE_CTL)
 extern void MUTE_IO_Init(void);
 extern void MUTE_Ctl(SCH_BOOL OnOff);
 ///===================MUTE END========================= 

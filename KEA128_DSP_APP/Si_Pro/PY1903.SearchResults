@@ -1,7 +1,11 @@
----- BLE_GVER Matches (8 in 3 files) ----
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):SCH_U8 BLE_GVER[30];
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		sch_memcpy(BLE_GVER,&Data[5],sizeof(BLE_GVER));
-App_at.c (e:\project\py1903\kea128_dsp_app\source\app):		if(sch_compare(BLE_GVER,"PY072",5)==TRUE)	bGUKAIBLE = 1;
-App_at.h (e:\project\py1903\kea128_dsp_app\source\app):extern SCH_U8 BLE_GVER[30];
-App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						sch_memcpy(pData+1,BLE_GVER,sizeof(BLE_GVER));
-App_bt.c (e:\project\py1903\kea128_dsp_app\source\app):						length_data += sizeof(BLE_GVER);
+---- AMP_Diag_Detect Matches (11 in 4 files) ----
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<P><STRONG><a name="[75]"></a>AMP_Diag_Detect</STRONG> (Thumb, 200 bytes, Stack size 8 bytes, mw_gpio.o(i.AMP_Diag_Detect))
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR><BR>[Stack]<UL><LI>Max Depth = 344<LI>Call Chain = AMP_Diag_Detect &rArr; Dsp_ON &rArr; Dsp_Mute &rArr; Dsp_Mute_A &rArr; Dsp_VolUpdate &rArr; Dsp_Single_A &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AMP_Diag_Detect
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AMP_Diag_Detect
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AMP_Diag_Detect
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AMP_Diag_Detect
+KEA128.htm (e:\project\py1903\kea128_dsp_app\keil_pro\output):<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AMP_Diag_Detect
+Mw_gpio.c (e:\project\py1903\kea128_dsp_app\source\app):void AMP_Diag_Detect(void)
+Mw_gpio.h (e:\project\py1903\kea128_dsp_app\source\app):extern void AMP_Diag_Detect(void);
+Task.c (e:\project\py1903\kea128_dsp_app\source\app):	AMP_Diag_Detect();

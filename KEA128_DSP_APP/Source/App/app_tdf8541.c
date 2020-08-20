@@ -78,7 +78,7 @@ Description:	init Amp Diagnose information indicate port
 ------------------------------------------------------------------------*/
 void AmpPort_Init(void)
 {
-	TurnOn_AMP;
+	TurnOn_AMP_STBY;
 }
 void TDF8541Init(void)
 {	

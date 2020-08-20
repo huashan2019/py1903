@@ -85,7 +85,7 @@ void TASK_Amp_Pro(void)
 			///if(App_Radio.RadioPwrState == RADIO_NORMAL)
 			{
 				App_Amp.AmpState = AMP_CHECK;
-				TurnOn_AMP;
+				TurnOn_AMP_STBY;
 			}
 			break;
 		case AMP_CHECK:
@@ -101,7 +101,7 @@ void TASK_Amp_Pro(void)
 		case AMP_DISABLE:
 			if(App_Amp.pAmpMute)
 				App_Amp.pAmpMute(ON);
-			TurnOff_AMP;
+			TurnOff_AMP_STBY;
 			App_Amp.AmpState = AMP_CLOSE;
 			break;
 		case AMP_CLOSE:

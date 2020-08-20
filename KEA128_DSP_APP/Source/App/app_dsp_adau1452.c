@@ -219,6 +219,7 @@ void Dsp_Updata(SCH_BOOL MixEnable,SCH_BOOL SingleEnable)
 	SCH_U16 index,index0;
 	AudioMute(HARDON);
 	TurnOff_REM_EN;
+	TurnOn_DIGITAL_MUTE;
 	if(MixEnable)
 	{
 		for(index=1;index<(DSP_CHANNEL_CNT+1);index++)
@@ -264,6 +265,7 @@ void Dsp_Updata(SCH_BOOL MixEnable,SCH_BOOL SingleEnable)
 	if(SysPower.nPowerState == POWER_NORMAL_RUN)
 	{
 		AudioMute(HARDOFF);
+		TurnOff_DIGITAL_MUTE;
 		///TurnOn_REM_EN;
 	}
 }

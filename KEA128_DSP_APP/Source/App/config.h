@@ -19,7 +19,7 @@
 #define AUDIO_START         ENABLE
 
 ///°æ±¾ºÅ
-#define MCU_VERSION         "D20200528"
+#define MCU_VERSION         "D20200820"
 
 
 

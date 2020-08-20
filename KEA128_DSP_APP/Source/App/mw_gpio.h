@@ -18,6 +18,11 @@ extern SCH_BOOL GPIO_ReadInputPin(GPIO_PinType GPIO_Pin);
 extern SCH_BOOL DSP_OFF_FLAG;
 extern void DSP_TEST_Init(void);
 extern void DSP_Test_Detect(void);
+extern SCH_BOOL AMP_OFF_FLAG;
+extern SCH_BOOL AMP1_OFF_FLAG;
+
+extern void AMP_Init(void);
+extern void AMP_Diag_Detect(void);
 ///===================ACC END============================
 
 
@@ -36,6 +41,14 @@ extern void DSP_Test_Detect(void);
 #define GPIO_SYS_POWER_CTL      	GPIO_PTB2//////
 #define TurnOn_SYS_POWER        	GPIO_PinSet(GPIO_SYS_POWER_CTL)
 #define TurnOff_SYS_POWER       	GPIO_PinClear(GPIO_SYS_POWER_CTL)
+
+
+
+#define GPIO_PRE_AMP_CTL      	GPIO_PTE5//////
+#define TurnOn_PRE_AMP        	GPIO_PinSet(GPIO_PRE_AMP_CTL)
+#define TurnOff_PRE_AMP       	GPIO_PinClear(GPIO_PRE_AMP_CTL)
+
+
 extern void SYS_Power_Ctl(SCH_BOOL OnOff);
 ///#define IO_ACC_EN             GPIOB
 #define GPIO_ACC_EN_CTL      	GPIO_PTF5//////
@@ -62,18 +75,26 @@ extern void ACC_EN_Ctl(SCH_BOOL OnOff);
 ///#define AMP_CTL		    
 #define IO_AMP                GPIOB
 #define GPIO_AMP_CTL          GPIO_PTF7//////
-#define TurnOn_AMP        	  GPIO_PinSet(GPIO_AMP_CTL)
-#define TurnOff_AMP       	  GPIO_PinClear(GPIO_AMP_CTL)
+#define TurnOn_AMP_STBY        	  GPIO_PinSet(GPIO_AMP_CTL)
+#define TurnOff_AMP_STBY       	  GPIO_PinClear(GPIO_AMP_CTL)
 ///#define AMP_BEEP		    
 #define IO_AMP_BEEP           GPIOA
-#define GPIO_AMP_BEEP         GPIO_PTC5//////
-#define TurnOn_AMP_BEEP       GPIO_PinSet(GPIO_AMP_BEEP)
-#define TurnOff_AMP_BEEP      GPIO_PinClear(GPIO_AMP_BEEP)
+#define GPIO_AUDIO_SWITCH         GPIO_PTC5//////
+#define TurnOn_AUDIO_SWITCH       GPIO_PinSet(GPIO_AUDIO_SWITCH)
+#define TurnOff_AUDIO_SWITCH      GPIO_PinClear(GPIO_AUDIO_SWITCH)
 ///#define IO_AMP_DET         GPIOB
-#define GPIO_AMP_DECT         GPIO_PTB5///
+#define GPIO_AMP_DECT         GPIO_PTH1///
 #define AMP_DET_LEVEL         GPIO_ReadInputPin(GPIO_AMP_DECT)
-#define AMP_DET_LVON          (LOW_LEVEL==AMP_DET_LEVEL)
-#define AMP_DET_LVOFF         (HIGH_LEVEL==AMP_DET_LEVEL)
+#define AMP_DET_LVON          (HIGH_LEVEL==AMP_DET_LEVEL)
+#define AMP_DET_LVOFF         (LOW_LEVEL==AMP_DET_LEVEL)
+
+#define GPIO_AMP1_DECT         GPIO_PTH1///
+#define AMP1_DET_LEVEL         GPIO_ReadInputPin(GPIO_AMP1_DECT)
+#define AMP1_DET_LVON          (HIGH_LEVEL==AMP1_DET_LEVEL)
+#define AMP1_DET_LVOFF         (LOW_LEVEL==AMP1_DET_LEVEL)
+
+
+
 ///===================AMP END========================= 
 
 
